@@ -1,0 +1,98 @@
+*
+body{
+  background: #000;
+}
+h1{
+  color:#fff;
+}
+.add-class{
+  background-color: green;
+  color: #fff;
+}
+.add-failed{
+  background-color: red;
+  color: #fff;
+}
+
+.number-class{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 10px;
+  
+}
+
+.number-container{
+  border: 2px solid grey;
+  place-items: center;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  background: transparent;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#pop-up{
+  position: fixed;
+  max-width: 700px;
+  height: 350px;
+  background: linear-gradient(13deg, rgba(255,225,225,0.1), rgba(225,225,225,0));
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 2em;
+  color: lime;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.new-button{
+  background-color: rgb(23, 169, 123);
+  border: 2px solid rgb(164, 227, 207);
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container{
+ display: inline-block;
+ margin-bottom: 40px;
+}
+
+.text-class{
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 3px;font-family: monospace;
+  border-right: 1px solid;
+  width: 100%;
+  overflow: hidden;
+  animation: 
+   typing 2s steps(180),
+   cursor .4s step-end infinite alternate;
+}
+
+/* blinking cursor */
+
+@keyframes cursor {
+  50% {border-color: transparent}
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
+
